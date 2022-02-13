@@ -368,6 +368,9 @@ footer{
         padding: 8px;
         transform: translate(0,0);
     }
+    .works span{
+        font-size: 10px;
+    }
    
     footer{
         height: 32px;
