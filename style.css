@@ -290,7 +290,8 @@ footer{
         font-size: 16px;
     }
     header img{
-        width: 30px;
+        margin-top: 6px;
+        width: 20px;
     }
 
     .title-comment{
