@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Noto+Sans+JP:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            
+
+
+            setTimeout(function(){
+                $(".title").css({
+                transition: "opacity 2s",
+                opacity:"1"
+
+            });
+            },1000)
+
+
+            $(".top-button").click(function () {
+                var position = 0;
+                var speed = 600;
+                $("html,body").animate({ scrollTop: position }, speed);
+            });
+
+            $(window).scroll(function () {
+                const windowHeight = $(window).height();
+                const scroll = $(window).scrollTop();
+
+                $('.aboutMe').each(function () {
+                    const targetPosition = $(this).offset().top;
+                    if (scroll > targetPosition - windowHeight + 100) {
+                        $(this).addClass("is-fadein1");
+                    }
+                });
+                $('.aboutKotori').each(function () {
+                    const targetPosition = $(this).offset().top;
+                    if (scroll > targetPosition - windowHeight + 100) {
+                        $(this).addClass("is-fadein2");
+                    }
+                });
+                $('.imageBox1').each(function () {
+                    const targetPosition = $(this).offset().top;
+                    if (scroll > targetPosition - windowHeight + 100) {
+                        $(this).addClass("is-fadein3");
+                    }
+                });
+                $('.imageBox2').each(function () {
+                    const targetPosition = $(this).offset().top;
+                    if (scroll > targetPosition - windowHeight + 100) {
+                        $(this).addClass("is-fadein4");
+                    }
+                });
+            });
+
+            $('.school').hover(function () {
+
+                $(".school").css({
+                    transition: "opacity 0.5s",
+                    opacity: "0.2"
+                });
+                $(".school-div p").css({
+                    transition: "opacity 0.5s",
+                    opacity: "1"
+
+                });
+            },
+                function () {
+                    $(".school").css({
+                        opacity: "1"
+                    });
+                    $(".school-div p").css({
+                        opacity: "0"
+
+                    });
+                });
+
+            $('.kasuga').hover(function () {
+
+                $(".kasuga").css({
+                    transition: "opacity 0.5s",
+                    opacity: "0.2"
+                });
+                $(".kasuga-div p").css({
+                    transition: "opacity 0.5s",
+                    opacity: "1"
+
+                });
+            },
+                function () {
+                    $(".kasuga").css({
+                        opacity: "1"
+                    });
+                    $(".kasuga-div p").css({
+                        opacity: "0"
+
+                    });
+                });
+
+
+            $('.memoppin').hover(function () {
+
+                $(".memoppin").css({
+                    transition: "opacity 0.5s",
+                    opacity: "0.2"
+                });
+                $(".memoppin-a p").css({
+                    transition: "opacity 0.5s",
+                    opacity: "1"
+
+                });
+            },
+                function () {
+                    $(this).css({
+                        opacity: "1"
+                    });
+                    $(".memoppin-a p").css({
+                        opacity: "0"
+
+                    });
+                });
+
+
+            $('.kokotori').hover(function () {
+
+                $(this).css({
+                    transition: "opacity 0.5s",
+                    opacity: "0.2"
+                });
+                $(".kokotori-a p").css({
+                    transition: "opacity 0.5s",
+                    opacity: "1"
+
+                });
+            },
+                function () {
+                    $(this).css({
+                        opacity: "1"
+                    });
+                    $(".kokotori-a p").css({
+                        opacity: "0"
+
+                    });
+                });
+        });
+
+
+
+
+    </script>
+    <title>Picopico</title>
+</head>
+
+<body>
+    <header>
+        <a class="top-button" href="#top">Picopico Site</a>
+        <div>
+            <a href="https://www.instagram.com">
+                <img src="image/glyph-logo_May2016.png" alt="" width="30px">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100013057578122">
+                <img src="image/_i_icon_00035_icon_000351_256.png" alt="" width="30px">
+            </a>
+        </div>
+
+    </header>
+    <section id="top" class="title">
+        <div class="title-comment">
+            <h1>ピコ</h1>
+            <p>Android/iPhone Mentor</p>
+        </div>
+
+    </section>
+    <section class="about">
+        <div class="aboutMe">
+            <img src="image/IMG_5078.jpg" alt="">
+            <div class="aboutMe-text">
+                <h3>About Me</h3>
+                <p>生越冴恵</p>
+                <p>Sae Ogoshi</p>
+                <p>東京大学工学部航空宇宙工学科</p>
+            </div>
+
+        </div>
+        <div class="aboutKotori">
+
+            <div class="aboutMe-text">
+                <h3>About Kotori</h3>
+                <p>コトリ</p>
+                <p>Kotori</p>
+                <p>昨年6月に誕生した相棒</p>
+            </div>
+            <img src="image/kotori2.png" alt="">
+    </section>
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="imageBox1">
+            <div class="school-div">
+                <img class="school" src="image/_MG_9423.JPG" alt="" width="500">
+                <p>木曜白金高輪スクールで<br>iPhone&Androidコースを<br>担当しています。</p>
+            </div>
+
+            <div class="kasuga-div">
+                <img class="kasuga" src="image/EDA39DE6-DECF-49E5-973B-8164914185C5.JPG" alt="" width="500">
+                <p>写真を撮ることにハマっています。<br>eos6Dが旅のお供です。<br>寺社仏閣や人などをよく撮っています。</p>
+            </div>
+
+        </div>
+    </section>
+    <section class="works">
+        <h2>Works</h2>
+        <div class="imageBox2">
+            <a class="memoppin-a" href="https://apps.apple.com/jp/app/memoppin/id1591171484">
+                <img class="memoppin" src="image/memoppin_icon-80.jpg" alt="" width="300">
+                <p><span>memoppin</span> (iOS)<br><br>行きたい場所を地図にメモするアプリ<br>詳しくはクリック！</p>
+            </a>
+            <a class="kokotori-a" href="https://play.google.com/store/apps/details?id=com.pico.ogoshi.feelingrecorder">
+                <img class="kokotori" src="image/ic_launcher-playstore.png" alt="" width="300">
+                <p><span>kokotori</span> (Android)<br><br>コトリがお返事をくれる日記アプリ<br>詳しくはクリック！</p>
+            </a>
+
+        </div>
+    </section>
+    <footer>@Sae Ogoshi</footer>
+   
+</body>
+
+</html>
